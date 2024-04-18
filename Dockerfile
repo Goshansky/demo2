@@ -9,4 +9,4 @@ FROM openjdk:21
 
 COPY --from=builder /build/target/*.tar app.jar
 EXPOSE 8080
-CMD["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "app.jar"]
